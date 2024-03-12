@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[230],{252:e=>{e.exports=JSON.parse('{"title":"Guides","slug":"/category/guides","permalink":"/fc4e-cat-doc/docs/category/guides","navigation":{"previous":{"title":"Introduction","permalink":"/fc4e-cat-doc/docs/intro"},"next":{"title":"Guide to FC4E CAT","permalink":"/fc4e-cat-doc/docs/guides/"}}}')}}]);
