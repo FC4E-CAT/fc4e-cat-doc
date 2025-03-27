@@ -88,7 +88,7 @@ Users can export an assessment by clicking the **Export & Download Assessment** 
 
 ### Publishing an Assessment
 
-Users can publish an assessment to make it visible to others. To publish an assessment, click the **Publish Assessment** button ![](assets/assessment_publish.png). Only the creator or an administrator has the ability to publish an assessment. A confirmation dialog will open, prompting the user to confirm the action. To proceed, the user must click the **Publish** button.
+Users can publish an assessment to make it visible to others. To publish an assessment, click the **Publish Assessment** button ![](/img/assessments/assessment_publish.png). Only the creator or an administrator has the ability to publish an assessment. A confirmation dialog will open, prompting the user to confirm the action. To proceed, the user must click the **Publish** button.
 
 ![Publishing Assessment](/img/assessments/assessment_publish_dialog.png)
 
