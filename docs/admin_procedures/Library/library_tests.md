@@ -119,4 +119,35 @@ import tests_view from '/img/library/tests/tests_view.png';
 
 In the **View Test** modal, the user can review the test details, including parameters and evidence.
 
+## Test Versioning
+
+### Understanding Test Versions
+
+Test versioning allows you to maintain a history of changes made to a test, ensuring that previous versions can be accessed, and modifications are tracked. When a test changes, a new version is created, which helps in maintaining the integrity of the assessment process over time.
+
+### Viewing and Managing Test Versions
+
+1. **Viewing Versions:**
+    - When you view a test, you will see the latest version by default. If multiple versions exist, you can navigate to the version list to see all past versions.
+
+2. **Creating a New Version:**
+    - When a test changes and a new version is created, it will automatically be added to the list of versions for that test. The versioning process helps in tracking changes over time.
+
+3. **Deleting a Test with Versions:**
+    - If a test has multiple versions, it cannot be deleted. If you wish to delete a test, ensure that no versions exist or that the test is not in use by any motivations.
+
+### Key Rules for Test Versioning
+
+1. **Tests Used in Motivations Cannot Be Deleted:**
+    - If a test is used in any published motivation, it cannot be deleted. This ensures that no active motivation is broken due to the removal of a test.
+
+2. **Tests with Versions Cannot Be Deleted:**
+    - If a test has multiple versions (i.e., version 1 and later versions), the first version (version 1) cannot be deleted if any subsequent versions exist. This is to preserve the history and avoid accidental removal of a foundational test.
+
+3. **Displaying Test Versions:**
+    - The system displays the most recent version of a test first. All previous versions are listed as children under the latest version for transparency and historical tracking.
+
+4. **Test Name Remains the Same Across Versions:**
+    - The name of a test remains consistent across all versions to avoid confusion and ensure that tests can be easily referenced by their common name, regardless of which version is being accessed.
+
 ---
