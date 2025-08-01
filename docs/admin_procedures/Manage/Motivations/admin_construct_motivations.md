@@ -1,54 +1,36 @@
 ---
 id: admin_construct_motivations
-title: Admin / Build Motivations
-sidebar_position: 2
+title: Admin / Build Motivation
+sidebar_position: 3
 ---
 
 # Admin / Build Motivations
 
 ## Overview
+Once the actor is assigned to a motivation, the next step is to formalize the guidelines by encoding them into criteria. These criteria are logically grouped under broader principles, and each criterion can contain tests that help verify compliance with the defined guidelines. This structured approach ensures traceability and clarity in the assessment process.
 
-Once a motivation is created, administrators can enrich it by assigning **Criteria**, **Tests**, and **Actors**. To begin, click the  
-![](/img/manage/admin_motivations/motivation_view_button.png)  
-button to access the **Motivation Details** page.
+After assigning the actor, you are redirected to the **Assessment Builder** page — the central workspace for constructing and managing your assessment model. This page is divided into three main interactive sections:
 
-<p align="center">
+**Structure**:
+This section allows you to define and organize the hierarchical elements of your assessment — from principles and criteria to the individual tests. You can select which part of the structure to work on and add new elements as needed.
 
-  ![](/img/manage/admin_motivations/motivation_display_page.png)
-</p>
+**Preview**:
+This live view displays the current structure and content of your assessment in real time. It gives you immediate visual feedback on how the pieces fit together and how your assessment is evolving.
 
----
+**Builder**:
+Once you've selected an element in the Structure panel, use the Builder section to configure its details. Here, you can enter titles, descriptions, evaluation logic, thresholds, and other specific properties that define how each criterion or test should behave.
 
-## Step 1: Add Actor
+Together, these sections provide a streamlined interface for building comprehensive and logically structured assessments that align with your motivation and actor assignments.
 
-The first step in constructing a motivation is to add the **Actor** to whom the assessment applies. Click the **Add Actor** button:
-
-<p align="center">
-
-  ![](/img/manage/admin_motivations/motivation_add_actor_button.png)
-</p>
-
-A modal window will appear:
-
-- Select an **Actor** from the list.
-- Click the **Create** button to assign the actor to the motivation.
-
-You will be redirected to the **Motivation Builder**, where you can assign **Principles**, **Criteria**, and **Tests** to the selected actor.
 
 <p align="center">
 
   ![](/img/manage/admin_motivations/motivation_builder.png)
 </p>
 
-The builder interface is divided into three main sections:
-
-- **Structure**: Select the element to construct.
-- **Preview**: View current progress.
-- **Builder**: Fill in details for the selected element.
-
 ---
 
-## Step 2: Add Criterion
+## Step 1: Add Criterion
 
 To add a criterion:
 
@@ -109,7 +91,7 @@ There you can edit any of the fields of the criterion . Click **Update Criterion
 
 </p>
 
-## Step 3: Add Principle to Criterion
+## Step 2: Add Principle to Criterion
 
 To add a principle to a criterion:
 
@@ -172,13 +154,7 @@ In the **Select** tab of the Builder:
 
 
 
-## Step 4: Edit Advanced Settings
-
-A criterion by default has a **Simple Sum** algorithm type, **Binary-Binary** benchmark type
-and **1** benchmark value, as these are the most commonly used values for the criteria. 
-But maybe this need to change and different type of tests may consist the criterion. 
-To change this click on **Advanced Settings**    ![](/img/manage/admin_motivations/motivation_advanced_settings_button.png) and edit the values. Click **Save configuration** to save the changes.
-
+## Step 3: Edit Advanced Settings
 
 By default, a criterion uses the **Simple Sum** algorithm type, **Binary-Binary** benchmark type, and a benchmark value of **1**, as these are the most commonly applied settings. However, depending on the type of tests consisting the criterion, you may need to adjust these values. To do so, click on **Advanced Settings** 
   ![](/img/manage/admin_motivations/motivation_advanced_settings_button.png), modify the necessary fields, and then click **Save Configuration** to apply your changes.
