@@ -22,13 +22,13 @@ To manage Tests, a user should navigate to the **Library / Tests** tab from the 
 
 ### Creating a New Test
 
-To create a new test, the user should click the **Create New** button which will redirect them to the Test modal screen.
+To create a new test, the user should click the **Create New** button, which will redirect them to the Test **creation page**.
 
 import tests_create from '/img/library/tests/tests_create.png';
 
 <p align="center">
 
-<img src={tests_create} alt="Creating a New Test" style={{width: 500}} />
+<img src={tests_create} alt="Creating a New Test" style={{width: 1000}} />
 </p>
 
 On the creation page, users must provide key details about the test.
@@ -40,16 +40,16 @@ The required information includes:
 3. **Description (required):** A small description of the Test.
 4. **Test Method (required):** Select the appropriate test method for the test.
 
-Additionally, there are **optional parameters** and **evidence** that can be added:
+**Derived & configurable**
 
-- **Parameters:** Click **Add new** to create parameters that define specific inputs or conditions for the test.
-- **Evidence:** Click **Add Evidence** to attach supporting evidence related to the test.
+- **Parameters:** Once a **Test Method** is selected, the **required parameters are auto-populated**. Users **only provide values**; the parameter list itself is defined by the method and **cannot be added/removed** here.
+- **Evidence:** A **Yes/No toggle** indicating whether this test requires evidence.
 
 Once the necessary fields are filled in, the user can click the **Create** button to create the test and will be redirected to the page with the list of tests. If the user wishes to cancel the process, they should click the **Cancel** button.
 
 ### Edit a Test
 
-A user can edit one of the tests by clicking on the **Edit test** button. 
+To edit a test, the user clicks the **Edit test** button, which will redirect them to the Test edit page.
 
 import tests_edit_button from '/img/library/tests/tests_edit_button.png';
 
@@ -57,25 +57,31 @@ import tests_edit_button from '/img/library/tests/tests_edit_button.png';
   ![Edit a Test Button](/img/library/tests/tests_edit_button.png)
 </p>
 
-Then a modal like the one in the following image will appear.
+After clicking Edit test, the user is redirected to the Test edit page.
 
 import tests_edit from '/img/library/tests/tests_edit.png';
 
 <p align="center">
 
-<img src={tests_edit} alt=" Edit a Test" style={{width: 500}} />
+<img src={tests_edit} alt=" Edit a Test" style={{width: 1000}} />
 </p>
 
-The user can update the following fields:
+**The user can update the following fields:**
 
-1. **TES (required):** A unique identifier assigned to the test.
-2. **Label (required):** A label describing the test.
-3. **Description (required):** A small description of the test.
-4. **Test Method (required):** Select the appropriate test method.
+1. **Label (required):** A label describing the test.
+2. **Description (required):** A small description of the test.
+3. **Test Method (required):** Select the appropriate test method; **this determines the test’s parameters**.
 
-Additionally, the user can update **Parameters** or **Evidence** as needed by clicking on the respective buttons to add, edit, or remove them.
+**Fixed / not editable**
+- **TES:** The test identifier remains the same and cannot be changed.
+
+**Parameters & Evidence**
+- **Parameters:** Displayed based on the selected Test Method. Users edit only the values. The list itself is fixed by the method and cannot be added or removed. Changing the Test Method may change/reset the parameters shown. 
+- **Evidence:** Toggle Yes/No.
 
 Once the necessary fields are updated, the user can click the **Update** button to save the changes and will be redirected to the page with the list of tests. If the user wishes to cancel the process, they should click the **Cancel** button.
+
+> Note: If you switch the Test Method, review the parameter values, as some may no longer apply. 
 
 ### Delete a Test
 
@@ -114,9 +120,40 @@ import tests_view from '/img/library/tests/tests_view.png';
 
 <p align="center">
 
-<img src={tests_view} alt=" View a Test" style={{width: 500}} />
+<img src={tests_view} alt=" View a Test" style={{width: 700}} />
 </p>
 
 In the **View Test** modal, the user can review the test details, including parameters and evidence.
+
+## Test Versioning
+
+### Understanding Test Versions
+
+Test versioning allows you to maintain a history of changes made to a test, ensuring that previous versions can be accessed, and modifications are tracked. When a test changes, a new version is created, which helps in maintaining the integrity of the assessment process over time.
+
+### Viewing and Managing Test Versions
+
+1. **Viewing Versions:**
+    - When you view a test, you will see the latest version by default. If multiple versions exist, you can navigate to the version list to see all past versions.
+
+2. **Creating a New Version:**
+    - When a test changes and a new version is created, it will automatically be added to the list of versions for that test. The versioning process helps in tracking changes over time.
+
+3. **Deleting a Test with Versions:**
+    - If a test has multiple versions, it cannot be deleted. If you wish to delete a test, ensure that no versions exist or that the test is not in use by any motivations.
+
+### Key Rules for Test Versioning
+
+1. **Tests Used in Motivations Cannot Be Deleted:**
+    - If a test is used in any published motivation, it cannot be deleted. This ensures that no active motivation is broken due to the removal of a test.
+
+2. **Tests with Versions Cannot Be Deleted:**
+    - If a test has multiple versions (i.e., version 1 and later versions), the first version (version 1) cannot be deleted if any subsequent versions exist. This is to preserve the history and avoid accidental removal of a foundational test.
+
+3. **Displaying Test Versions:**
+    - The system displays the most recent version of a test first. All previous versions are listed as children under the latest version for transparency and historical tracking.
+
+4. **Test Name Remains the Same Across Versions:**
+    - The name of a test remains consistent across all versions to avoid confusion and ensure that tests can be easily referenced by their common name, regardless of which version is being accessed.
 
 ---
