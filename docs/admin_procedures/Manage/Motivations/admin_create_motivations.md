@@ -1,6 +1,6 @@
 ---
 id: admin_create_motivations
-title: Admin / Create Motivations
+title: Admin / Create Motivation
 sidebar_position: 1
 ---
 
@@ -53,4 +53,5 @@ Set the **Parameter** that is needed to the endpoint request
 - **Parameter Type** , **Assessment Reference** if received from assessment or **Value** if given from the user.
 **Name** , the name of the parameter
 **Assessment Reference** , where the parameter will be found in the assessment.
+
 
