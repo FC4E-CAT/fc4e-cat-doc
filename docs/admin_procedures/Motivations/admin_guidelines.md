@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Publish Motivations in CAT 
 
-A motivation is initially considered to be  in an **UNPUBLISHED** status,during creation. This means that the administrator can add, update, or delete context in the motivation.
+A motivation is initially considered to be in an **UNPUBLISHED** status, during creation. This means that the administrator can add, update, or delete context in the motivation.
 The status can change if the administrator decides to **PUBLISHED** the motivation. By publishing the motivation, the administrator 
 declares that no further changes will be applied to the motivation's context. 
 
@@ -18,7 +18,7 @@ FC4E CAT Service provides the **PUBLISH** feature at two levels:
 
 At both levels, if status is **PUBLISHED add/update/delete** actions on the motivation's context are not permitted. Also, the following elements: metrics, criteria, principles, tests, test methods, and test definitions, also are not permitted to be updated or deleted, if they are part of a published motivation or motivation-actor relation.
 
-Additionaly, when a motivation is is an **UNPUBLISHED** status, only administrator can view of the motivation's template. Unpublished motivation's template view is not permitted to the users.
+Additionally, when a motivation is an **UNPUBLISHED** status, only administrator can view of the motivation's template. Unpublished motivation's template view is not permitted to the users.
 
 ### Actions Not Permitted in PUBLISHED Motivation or Motivation-Actor Relation
 
